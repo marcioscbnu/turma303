@@ -1,0 +1,16 @@
+package produtojdbc;
+import java.sql.Connection;
+
+import javax.swing.JOptionPane;
+
+import util.Conexao;
+
+public class Principal {
+	public static void main(String[] args) throws ClassNotFoundException {
+		Eletronico el1 = new Eletronico("El01", "TV LG", 1200, "LG", 12);
+		if (el1.incluirEletronico()) {
+			JOptionPane.showMessageDialog(null, "Produto Incluído com Sucesso");
+		}
+		
+	}
+}

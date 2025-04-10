@@ -1,0 +1,11 @@
+package produtojdbc;
+import java.sql.Connection;
+import util.Conexao;
+
+public class Principal {
+	public static void main(String[] args) throws ClassNotFoundException {
+		Eletronico el1 = new Eletronico("El01", "TV LG", 1200, "LG", 12);
+		el1.incluirEletronico();
+		
+	}
+}
